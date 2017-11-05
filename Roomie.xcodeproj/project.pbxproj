@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		59D547B66F1B7A6A779F4649 /* Pods_Roomie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988245FA6F1EE3B9FDB61649 /* Pods_Roomie.framework */; };
 		E214324E1FAE724800DCEBC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E214324D1FAE724800DCEBC3 /* Constants.swift */; };
-		E21432511FAEB6EE00DCEBC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21432501FAEB6EE00DCEBC3 /* GoogleService-Info.plist */; };
 		E2BD75081FAE5E20005FAE2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD75071FAE5E20005FAE2A /* AppDelegate.swift */; };
 		E2BD750A1FAE5E20005FAE2A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BD75091FAE5E20005FAE2A /* ChatViewController.swift */; };
 		E2BD750D1FAE5E20005FAE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BD750B1FAE5E20005FAE2A /* Main.storyboard */; };
 		E2BD750F1FAE5E20005FAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BD750E1FAE5E20005FAE2A /* Assets.xcassets */; };
 		E2BD75121FAE5E20005FAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BD75101FAE5E20005FAE2A /* LaunchScreen.storyboard */; };
 		E2BD751A1FAE66BC005FAE2A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2BD75191FAE66BC005FAE2A /* Podfile */; };
+		E2DCF3761FAF91EE00D05D4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DCF3751FAF91EE00D05D4F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,6 @@
 		B2421136AF23124D47D72C41 /* Pods-Roomie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roomie/Pods-Roomie.debug.xcconfig"; sourceTree = "<group>"; };
 		E214324B1FAE693200DCEBC3 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		E214324D1FAE724800DCEBC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E21432501FAEB6EE00DCEBC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2BD75041FAE5E20005FAE2A /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BD75071FAE5E20005FAE2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BD75091FAE5E20005FAE2A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		E2BD75111FAE5E20005FAE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2BD75131FAE5E20005FAE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2BD75191FAE66BC005FAE2A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E2DCF3751FAF91EE00D05D4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1D9A61CAB70BBB00B7CF14A /* Pods-Roomie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roomie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roomie/Pods-Roomie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 		E2BD75061FAE5E20005FAE2A /* Roomie */ = {
 			isa = PBXGroup;
 			children = (
-				E21432501FAEB6EE00DCEBC3 /* GoogleService-Info.plist */,
+				E2DCF3751FAF91EE00D05D4F /* GoogleService-Info.plist */,
 				E2BD75071FAE5E20005FAE2A /* AppDelegate.swift */,
 				E2BD75091FAE5E20005FAE2A /* ChatViewController.swift */,
 				E2BD750B1FAE5E20005FAE2A /* Main.storyboard */,
@@ -163,7 +163,7 @@
 			files = (
 				E2BD75121FAE5E20005FAE2A /* LaunchScreen.storyboard in Resources */,
 				E2BD750F1FAE5E20005FAE2A /* Assets.xcassets in Resources */,
-				E21432511FAEB6EE00DCEBC3 /* GoogleService-Info.plist in Resources */,
+				E2DCF3761FAF91EE00D05D4F /* GoogleService-Info.plist in Resources */,
 				E2BD751A1FAE66BC005FAE2A /* Podfile in Resources */,
 				E2BD750D1FAE5E20005FAE2A /* Main.storyboard in Resources */,
 			);
