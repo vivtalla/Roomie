@@ -13,16 +13,29 @@ class ChatViewController: JSQMessagesViewController {
 
     var messages = [JSQMessage]() //array of JSQMessage items to store the messages in the chat
     
+    /*!
+     * @discussion Sets outgoing message bubble colors to blue
+     * @param None
+     * @return Blue bubbles
+     */
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
     }()
-    //sets outgoing message bubble colors to blue
     
+    /*!
+     * @discussion Sets incoming message bubble colors to grey
+     * @param None
+     * @return Grey bubbles
+     */
     lazy var incomingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     }()
-    //sets incoming message bubble colors to grey
     
+    /*!
+     * @discussion Override load function for chat view
+     * @param None
+     * @return Chat view displayed and user created
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -78,6 +91,11 @@ class ChatViewController: JSQMessagesViewController {
         })
     }
 
+    /*!
+     * @discussion Tells user to pick a displayname
+     * @param None
+     * @return User ID is changed to user input
+     */
     @objc func showDisplayNameDialog()
     {
         let defaults = UserDefaults.standard
@@ -113,46 +131,80 @@ class ChatViewController: JSQMessagesViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    
+    /*!
+     * @discussion Displays various messages from users
+     * @param Messages view
+     * @return An item from messages based on the index from indexPath.item. This will return the message data for a particular message by its index.
+     */
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData!
     {
         return messages[indexPath.item]
     }
-    //returns an item from messages based on the index from indexPath.item. This will return the message data for a particular message by its index.
     
+    /*!
+     * @discussion Displays collection view of all messages
+     * @param UI view
+     * @return the total number of messages, based on messages.count – the amount of items in the array
+     */
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return messages.count
     }
-    //returns the total number of messages, based on messages.count – the amount of items in the array
     
-    
+    /*!
+     * @discussion Dispose of any resources that can be recreated.
+     * @param None
+     * @return Memory warning notification
+     */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    /*!
+     * @discussion Configure JSQ for incoming / outgoing messages
+     * @param Messages collection view
+     * @return Messages in view
+     */
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource!
     {
         return messages[indexPath.item].senderId == senderId ? outgoingBubble : incomingBubble
     }
     
+    /*!
+     * @discussion This will hide the avatars for message bubbles
+     * @param Messages view
+     * @return nil when JSQMVC wants avatar image data
+     */
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource!
     {
         return nil
     }
-    //returns nil when JSQMVC wants avatar image data. This will hide the avatars for message bubbles.
 
+    /*!
+     * @discussion called when label text is needed
+     * @param Messages view
+     * @return label text
+     */
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString!
     {
         return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: messages[indexPath.item].senderDisplayName)
-    } //called when label text is needed
+    }
     
+    /*!
+     * @discussion called when height of top label is needed
+     * @param Collection view
+     * @return Sets height of top label
+     */
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAt indexPath: IndexPath!) -> CGFloat
     {
         return messages[indexPath.item].senderId == senderId ? 0 : 15
-    } // called when height of top label is needed
+    }
     
+    /*!
+     * @discussion Allows user to send message to group
+     * @param button object, sender Id, display name, date
+     * @return Stores value in firebase database
+     */
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!)
     {
         let ref = Constants.refs.databaseChats.childByAutoId() //create reference to new value in Firebase on /chats node
