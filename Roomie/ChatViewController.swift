@@ -23,12 +23,12 @@ class ChatViewController: JSQMessagesViewController {
     }()
     
     /*!
-     * @discussion Sets incoming message bubble colors to grey
+     * @discussion Sets incoming message bubble colors to red
      * @param None
-     * @return Grey bubbles
+     * @return red bubbles
      */
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
     }()
     
     /*!
