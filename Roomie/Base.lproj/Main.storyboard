@@ -80,8 +80,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="TIG-mh-FLc"/>
                     <connections>
-                        <outlet property="emailField" destination="fOt-iG-hZy" id="lUU-vf-WGT"/>
-                        <outlet property="passwordField" destination="H5i-8x-MoM" id="z3J-2r-whT"/>
+                        <outlet property="emailField" destination="fOt-iG-hZy" id="aMM-2Y-ZjS"/>
+                        <outlet property="passwordField" destination="H5i-8x-MoM" id="jVh-qu-5rv"/>
                         <segue destination="ak6-Oa-UOg" kind="show" id="ogA-Gu-xJJ"/>
                     </connections>
                 </viewController>
@@ -140,6 +140,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="09T-YE-cKw"/>
                     <connections>
+                        <outlet property="emailField" destination="EV0-E4-O0z" id="FJG-zw-GlF"/>
+                        <outlet property="passwordField" destination="Orh-ub-T0Y" id="Bww-SK-kxY"/>
                         <segue destination="ak6-Oa-UOg" kind="show" id="baj-fO-Mno"/>
                     </connections>
                 </viewController>
@@ -167,6 +169,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="baj-fO-Mno"/>
+        <segue reference="ogA-Gu-xJJ"/>
     </inferredMetricsTieBreakers>
 </document>

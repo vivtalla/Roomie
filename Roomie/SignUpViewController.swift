@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet var emailField: UITextField!
     
-    @IBOutlet weak var emailField: UITextField!
-    
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,36 @@ class SignUpViewController: UIViewController {
     }
 
     
-    @IBAction func didTypeCreateAccount(_ sender: UIButton) {
-    }
+    @IBAction func didTypeCreateAccount(_ sender: UIButton)
+    {
+        let email = emailField.text
+        let password = passwordField.text
+        let validLogin = isValidEmail(stringValue: email!)
+        
+        if validLogin
+        {
+            Auth.auth().createUser(withEmail: email!, password: password!)
+            {(user, error) in
+            
+            if error == nil
+                {
+                    Auth.auth().signIn(withEmail: email!, password: password!)
+                }
+            }
+        }
+        else
+        {
+            let alert = UIAlertController(title: "Error", message: "Please Enter a Valid Email", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        }
     
+    func isValidEmail(stringValue: String) ->Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: stringValue)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,5 +68,4 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
