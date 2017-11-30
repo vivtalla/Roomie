@@ -23,7 +23,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="188"/>
+            <point key="canvasLocation" x="2000.8" y="-119.1904047976012"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yy9-pD-ibR">
+            <objects>
+                <viewController id="hys-Lq-Rc9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AnD-eP-JDx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK7-z5-u3m">
+                                <rect key="frame" x="-421" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-l9-Zao">
+                                <rect key="frame" x="164" y="409" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="XQO-Kq-qWT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1L-Qi-TxW">
+                                <rect key="frame" x="-139" y="264" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roomie Home Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jym-eJ-BrW">
+                                <rect key="frame" x="108" y="64" width="158" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-c7-joo">
+                                <rect key="frame" x="150" y="447" width="74" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="Nyr-XZ-tfu" eventType="touchUpInside" id="4nA-cc-TQj"/>
+                                    <action selector="didTouchSignOut:" destination="Nyr-XZ-tfu" eventType="touchUpInside" id="wrx-Oi-387"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="o1h-BL-QgE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddx-5N-BQx"/>
+                    <connections>
+                        <segue destination="sHr-Ap-egZ" kind="presentation" identifier="HomeToLogin" id="UQB-dx-Qp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mu0-e4-Pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Nyr-XZ-tfu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="174.06296851574214"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="a5w-30-6o3">
@@ -65,13 +121,16 @@
                                 <rect key="frame" x="164" y="388" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="didPressLogin:" destination="sHr-Ap-egZ" eventType="touchUpInside" id="MQ1-O6-6mU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-97-fEg">
                                 <rect key="frame" x="208" y="531" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up Here!"/>
                                 <connections>
-                                    <segue destination="UqY-39-kzY" kind="presentation" id="79V-fY-Wqo"/>
+                                    <segue destination="UqY-39-kzY" kind="presentation" identifier="LoginToSignup" id="79V-fY-Wqo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +141,7 @@
                     <connections>
                         <outlet property="emailField" destination="fOt-iG-hZy" id="aMM-2Y-ZjS"/>
                         <outlet property="passwordField" destination="H5i-8x-MoM" id="jVh-qu-5rv"/>
-                        <segue destination="ak6-Oa-UOg" kind="show" id="ogA-Gu-xJJ"/>
+                        <segue destination="9FG-g7-QqO" kind="presentation" identifier="LoginToHome" id="3Re-ie-1E8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELO-al-dRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +201,6 @@
                     <connections>
                         <outlet property="emailField" destination="EV0-E4-O0z" id="FJG-zw-GlF"/>
                         <outlet property="passwordField" destination="Orh-ub-T0Y" id="Bww-SK-kxY"/>
-                        <segue destination="ak6-Oa-UOg" kind="show" id="baj-fO-Mno"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgU-w4-Pi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,25 +208,25 @@
             <point key="canvasLocation" x="376.80000000000001" y="-675.11244377811101"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="7Fa-VC-BiY">
+        <scene sceneID="IXE-Rq-JKn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ak6-Oa-UOg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9FG-g7-QqO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WXc-Bj-W4c">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PMz-Bj-ZSO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oO8-Zq-3Sw"/>
+                        <segue destination="hys-Lq-Rc9" kind="relationship" relationship="rootViewController" id="u0e-vD-RRr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJW-BF-d37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPg-0h-pMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="189"/>
+            <point key="canvasLocation" x="-39" y="222"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ogA-Gu-xJJ"/>
+        <segue reference="yYe-My-7io"/>
     </inferredMetricsTieBreakers>
 </document>
