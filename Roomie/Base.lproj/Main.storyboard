@@ -28,8 +28,6 @@
         <!--View Controller-->
         <scene sceneID="Yy9-pD-ibR">
             <objects>
-                <exit id="Nyr-XZ-tfu" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mu0-e4-Pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="hys-Lq-Rc9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AnD-eP-JDx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -41,8 +39,9 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd9-l9-Zao">
-                                <rect key="frame" x="164" y="409" width="46" height="30"/>
+                                <rect key="frame" x="155" y="304" width="64" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Chat"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" id="XQO-Kq-qWT"/>
@@ -53,16 +52,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roomie Home Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jym-eJ-BrW">
-                                <rect key="frame" x="108" y="64" width="158" height="97"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Roomie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jym-eJ-BrW">
+                                <rect key="frame" x="65" y="82" width="244" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUq-kz-fWg">
-                                <rect key="frame" x="146" y="447" width="82" height="60"/>
+                                <rect key="frame" x="115" y="489" width="144" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
                                     <action selector="didPressSignOut:" destination="Nyr-XZ-tfu" eventType="touchUpInside" id="fNc-SN-RpB"/>
@@ -70,8 +70,21 @@
                                     <segue destination="sHr-Ap-egZ" kind="presentation" id="cv7-Jb-7G4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2X-y2-fPO">
+                                <rect key="frame" x="103" y="386" width="169" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Task Manager"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Would you like to do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7k-Dm-Om4">
+                                <rect key="frame" x="69" y="171" width="237" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.51361407589999997" green="0.81963597359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="o1h-BL-QgE"/>
                     </view>
                     <navigationItem key="navigationItem" id="ddx-5N-BQx"/>
@@ -79,8 +92,10 @@
                         <segue destination="Nyr-XZ-tfu" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToLoginWithSegue:" id="XMU-2r-yOg"/>
                     </connections>
                 </viewController>
+                <exit id="Nyr-XZ-tfu" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mu0-e4-Pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="174.06296851574214"/>
+            <point key="canvasLocation" x="1169" y="-119"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="a5w-30-6o3">
@@ -112,38 +127,43 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOJ-HS-H57">
-                                <rect key="frame" x="16" y="485" width="184" height="21"/>
+                                <rect key="frame" x="16" y="458" width="213" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHP-E4-GnK">
-                                <rect key="frame" x="164" y="398" width="46" height="30"/>
+                                <rect key="frame" x="133" y="372" width="108" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="didPressLogin:" destination="sHr-Ap-egZ" eventType="touchUpInside" id="MQ1-O6-6mU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-97-fEg">
-                                <rect key="frame" x="208" y="481" width="100" height="30"/>
+                                <rect key="frame" x="224" y="458" width="135" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign up Here!"/>
                                 <connections>
                                     <segue destination="UqY-39-kzY" kind="presentation" identifier="LoginToSignup" id="79V-fY-Wqo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfu-KT-rRV">
-                                <rect key="frame" x="116" y="553" width="144" height="30"/>
+                                <rect key="frame" x="91" y="514" width="192" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
                                     <action selector="didTapForgotPassword:" destination="sHr-Ap-egZ" eventType="touchUpInside" id="W1m-xS-ADz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.51361407589999997" green="0.81963597359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="93q-2Y-d3i"/>
                     </view>
                     <navigationItem key="navigationItem" id="TIG-mh-FLc"/>
@@ -165,24 +185,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc7-YW-dsC">
-                                <rect key="frame" x="131" y="440" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Account"/>
-                                <connections>
-                                    <action selector="didTypeCreateAccount:" destination="UqY-39-kzY" eventType="touchUpInside" id="lpU-ce-Bi8"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oo-e8-6SP">
-                                <rect key="frame" x="37" y="528" width="207" height="21"/>
+                                <rect key="frame" x="16" y="442" width="228" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-MI-fzB">
-                                <rect key="frame" x="238" y="521" width="59" height="35"/>
+                                <rect key="frame" x="252" y="453" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
                                     <segue destination="sHr-Ap-egZ" kind="presentation" id="yYe-My-7io"/>
@@ -202,8 +215,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZL-H6-0VJ">
+                                <rect key="frame" x="116" y="93" width="143" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc7-YW-dsC">
+                                <rect key="frame" x="102" y="384" width="171" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="didTypeCreateAccount:" destination="UqY-39-kzY" eventType="touchUpInside" id="lpU-ce-Bi8"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.51361407589999997" green="0.81963597359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gLm-AI-Hba"/>
                     </view>
                     <navigationItem key="navigationItem" id="09T-YE-cKw"/>
@@ -214,12 +243,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgU-w4-Pi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376.80000000000001" y="-675.11244377811101"/>
+            <point key="canvasLocation" x="365.60000000000002" y="-675.11244377811101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IXE-Rq-JKn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qPg-0h-pMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9FG-g7-QqO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PMz-Bj-ZSO">
@@ -231,6 +259,7 @@
                         <segue destination="hys-Lq-Rc9" kind="relationship" relationship="rootViewController" id="u0e-vD-RRr"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPg-0h-pMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39" y="222"/>
         </scene>
