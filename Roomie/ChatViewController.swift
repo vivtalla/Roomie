@@ -8,6 +8,9 @@
 
 import UIKit
 import JSQMessagesViewController
+import FirebaseAuth
+import Firebase
+import FirebaseDatabase
 
 class ChatViewController: JSQMessagesViewController {
 
@@ -23,12 +26,12 @@ class ChatViewController: JSQMessagesViewController {
     }()
     
     /*!
-     * @discussion Sets incoming message bubble colors to grey
+     * @discussion Sets incoming message bubble colors to red
      * @param None
-     * @return Grey bubbles
+     * @return red bubbles
      */
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
     }()
     
     /*!
@@ -41,8 +44,27 @@ class ChatViewController: JSQMessagesViewController {
        
         
         let defaults = UserDefaults.standard //sets to temporary constant
+        let user = Auth.auth().currentUser;
         
-        if  let id = defaults.string(forKey: "jsq_id"), //check if jsq_id exist in user defaults
+        
+        /*
+        if let id = user?.uid,
+            let name = user?.displayName
+        {
+        
+        senderId = id
+        senderDisplayName = name
+        }
+        else
+        {
+            senderId = user?.uid
+            senderDisplayName = ""
+            showDisplayNameDialog()
+            
+        }
+ */
+        
+        if  let id = user?.uid, //check if jsq_id exist in user defaults
             let name = defaults.string(forKey: "jsq_name") //check if jsq_name exist in user defaults
         {
             senderId = id //assign to id if exists
@@ -50,7 +72,7 @@ class ChatViewController: JSQMessagesViewController {
         }
         else
         {
-            senderId = String(arc4random_uniform(999999)) //assign random string to sender_id (each user will need a random and different sender id)
+            senderId = user?.uid //String(arc4random_uniform(999999)) //assign random string to sender_id (each user will need a random and different sender id)
             senderDisplayName = "" //assign empty string to display name
             
             defaults.set(senderId, forKey: "jsq_id") //save new senderID in user defaults for key jsq_id
@@ -99,6 +121,7 @@ class ChatViewController: JSQMessagesViewController {
     @objc func showDisplayNameDialog()
     {
         let defaults = UserDefaults.standard
+        //var user = Auth.auth().currentUser;
         
         let alert = UIAlertController(title: "Display Name", message: "Choose a display name to begin chatting. Others will see this name when you send chat messages. You can change your display name again by tapping the navigation bar.", preferredStyle: .alert) //tells user to pick displayname
         
