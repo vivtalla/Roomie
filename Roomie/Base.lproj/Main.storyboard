@@ -88,9 +88,6 @@
                         <viewLayoutGuide key="safeArea" id="o1h-BL-QgE"/>
                     </view>
                     <navigationItem key="navigationItem" id="ddx-5N-BQx"/>
-                    <connections>
-                        <segue destination="Nyr-XZ-tfu" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToLoginWithSegue:" id="XMU-2r-yOg"/>
-                    </connections>
                 </viewController>
                 <exit id="Nyr-XZ-tfu" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mu0-e4-Pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,6 +262,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cv7-Jb-7G4"/>
+        <segue reference="yYe-My-7io"/>
     </inferredMetricsTieBreakers>
 </document>

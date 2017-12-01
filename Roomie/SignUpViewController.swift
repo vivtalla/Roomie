@@ -43,7 +43,7 @@ class SignUpViewController: UIViewController {
                         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     default:
-                        let alert = UIAlertController(title: "Other", message: "Please Type a Valid Email and Password", preferredStyle: UIAlertControllerStyle.alert)
+                        let alert = UIAlertController(title: "Invalid Email or Password", message: "Note: Password Requires a Minimum of Six Characters", preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
