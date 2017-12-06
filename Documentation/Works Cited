@@ -1,0 +1,29 @@
+https://www.sitepoint.com/creating-a-firebase-backend-for-ios-app/ - example of user creation
+Accessed 11-1-2017
+
+https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/DefineYourDataModel.html#//apple_ref/doc/uid/TP40015214-CH20-SW1 - example of test code / documentation of view controllers
+Accessed 11-1-2017
+
+https://firebase.google.com/docs/auth/ios/firebaseui - firebase documentation adding users
+Accessed 11-4-2017
+
+https://firebase.google.com/docs/database/security/ - fire base documentation basics on user security
+Accessed 11-4-2017
+
+http://cocoadocs.org/docsets/JSQMessagesViewController/7.3.4/ - jsqmessages documentation
+Accessed 11-10-2017
+
+https://codelabs.developers.google.com/codelabs/firebase-auth-ios/index.html?index=..%2F..%2Findex#5 - firebase example of adding user management to application
+Accessed 11-11-2017
+
+https://firebase.google.com/docs/auth/ios/firebaseui#before_you_begin - documentation to adding different forms of sign ons.
+Accessed 11-15-201
+
+https://firebase.google.com/docs/auth/ios/manage-users - managing users in firebase
+Accessed 11-15-2017
+
+https://www.raywenderlich.com/139322/firebase-tutorial-getting-started-2
+Accessed 11-27-2017
+
+https://stackoverflow.com/questions/31461376/while-trying-to-change-placeholder-text-fatal-error-unexpectedly-found-nil-whi
+Accessed 11-27-2017
