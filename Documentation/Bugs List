@@ -1,0 +1,9 @@
+This document contains the known bugs on the Roomie app.
+
+1) In the sign up page, occasionally the user will be created even though the password has not been verified. This does not always happen but happens on random occasion.
+
+2) Occasionally when a user logs back in to the application and enters the chat mode, it will not save their information stored in the chatViewController. This almost never happens,but will randomly occur.
+
+3) When the user is creating an account or is logging in, when they are typing the username in, the autocorrect feature will change what they type causing frustration to the user.
+
+4) When the user enters the chat mode and their are many saved messages, the format of the whole page sometimes shifts down creating an odd view that makes it hard to see the latest message.
