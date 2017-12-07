@@ -13,7 +13,7 @@ import Firebase
 import FirebaseDatabase
 
 class ChatViewController: JSQMessagesViewController {
-
+    
     var messages = [JSQMessage]() //array of JSQMessage items to store the messages in the chat
     
     /*!
@@ -31,8 +31,23 @@ class ChatViewController: JSQMessagesViewController {
      * @return red bubbles
      */
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     }()
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
+        
+        let message = messages[indexPath.row]
+        
+        if message.senderId == self.senderId {
+            cell.textView!.textColor = UIColor.white
+        }
+        else {
+            cell.textView!.textColor = UIColor.black
+        }
+        
+        return cell
+    }
     
     /*!
      * @discussion Override load function for chat view
@@ -41,28 +56,9 @@ class ChatViewController: JSQMessagesViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
         let defaults = UserDefaults.standard //sets to temporary constant
         let user = Auth.auth().currentUser;
-        
-        
-        /*
-        if let id = user?.uid,
-            let name = user?.displayName
-        {
-        
-        senderId = id
-        senderDisplayName = name
-        }
-        else
-        {
-            senderId = user?.uid
-            senderDisplayName = ""
-            showDisplayNameDialog()
-            
-        }
- */
         
         if  let id = user?.uid, //check if jsq_id exist in user defaults
             let name = defaults.string(forKey: "jsq_name") //check if jsq_name exist in user defaults
@@ -81,10 +77,10 @@ class ChatViewController: JSQMessagesViewController {
             showDisplayNameDialog() //show display name
         }
         
-        title = "Chat: \(senderDisplayName!)" //changes view controller title to Chat: [display name]
+        //title = "Chat: \(senderDisplayName!)" //changes view controller title to Chat: [display name]
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog)) //lets user change displayname by clicking on navigation bar
-        tapGesture.numberOfTapsRequired = 1
+        tapGesture.numberOfTapsRequired = 2
         
         navigationController?.navigationBar.addGestureRecognizer(tapGesture)
         
@@ -144,7 +140,7 @@ class ChatViewController: JSQMessagesViewController {
                 
                 self?.senderDisplayName = textField.text
                 
-                self?.title = "Chat: \(self!.senderDisplayName!)"
+                //self?.title = "Chat: \(self!.senderDisplayName!)"
                 
                 defaults.set(textField.text, forKey: "jsq_name")
                 defaults.synchronize()
