@@ -1,0 +1,229 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Constants.swift",
+      "line": 13,
+      "symbol": "Constants",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Constants.swift",
+      "line": 15,
+      "symbol": "Constants.refs",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Constants.swift",
+      "line": 17,
+      "symbol": "Constants.refs.databaseRoot",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Constants.swift",
+      "line": 18,
+      "symbol": "Constants.refs.databaseChats",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/AppDelegate.swift",
+      "line": 15,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/ChatViewController.swift",
+      "line": 15,
+      "symbol": "ChatViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/ChatViewController.swift",
+      "line": 17,
+      "symbol": "ChatViewController.messages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/FadeSegue.swift",
+      "line": 12,
+      "symbol": "FadeSegue",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/LoginViewController.swift",
+      "line": 14,
+      "symbol": "LoginViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/LoginViewController.swift",
+      "line": 16,
+      "symbol": "LoginViewController.emailField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/LoginViewController.swift",
+      "line": 18,
+      "symbol": "LoginViewController.passwordField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/LoginViewController.swift",
+      "line": 20,
+      "symbol": "LoginViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/MenuController.swift",
+      "line": 12,
+      "symbol": "MenuController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/SignUpViewController.swift",
+      "line": 12,
+      "symbol": "SignUpViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/SignUpViewController.swift",
+      "line": 14,
+      "symbol": "SignUpViewController.emailField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/SignUpViewController.swift",
+      "line": 16,
+      "symbol": "SignUpViewController.passwordField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 12,
+      "symbol": "Task",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 14,
+      "symbol": "Task.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 15,
+      "symbol": "Task.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 16,
+      "symbol": "Task.addedByUser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 17,
+      "symbol": "Task.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/Task.swift",
+      "line": 18,
+      "symbol": "Task.completed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 12,
+      "symbol": "TaskViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 15,
+      "symbol": "TaskViewController.listToUsers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 18,
+      "symbol": "TaskViewController.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 19,
+      "symbol": "TaskViewController.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 20,
+      "symbol": "TaskViewController.user",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/TaskViewController.swift",
+      "line": 21,
+      "symbol": "TaskViewController.userCountBarButtonItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/User.swift",
+      "line": 12,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/User.swift",
+      "line": 14,
+      "symbol": "User.uid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Vivek/Desktop/Roomie-RealProject4/Roomie/User.swift",
+      "line": 15,
+      "symbol": "User.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Vivek/Desktop/Roomie-RealProject4"
+}
